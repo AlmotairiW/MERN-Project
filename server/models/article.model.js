@@ -16,6 +16,10 @@ const ArticleSchema = new mongoose.Schema({
     url: {
         type: String
     },
+    writtenByUser: {
+        type: Boolean,
+        default: false
+    }
     
 
 }, {timestamps: true});
