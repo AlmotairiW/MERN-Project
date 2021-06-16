@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import axios from "axios";
-import { Link, Router } from "@reach/router";
-import ViewArt from "./ViewArt";
+import { Link } from "@reach/router";
+import '../style/MainStyle.css';
+
 
 const Main = (props) => {
   const {articles, setArticles} = props;
@@ -21,18 +22,21 @@ const Main = (props) => {
   };
   return (
     <div>
+     
       <form onSubmit={handelSearch}>
-        <input type="text" onChange={(e) => setSearchQ(e.target.value)}></input>
-        <button>Search</button>
+        <div className="active-pink-3 active-pink-4 mb-4">
+            <input className="form-control" type="text" placeholder="Search" aria-label="Search" onChange={(e) => setSearchQ(e.target.value)}/>
+            <button className="btn-hover color-9" >Search</button>
+        </div>
       </form>
       {lodaed &&
         articles.map((art, idx) => {
           return (
             <div key={idx}>
-              <div style={{ border: "1px solid black" }}>
-                <p>Title: {art.title}</p>
-                <p>Description: {art.description}</p>
-                <Link to={`/view/${idx}`}>View Details</Link>
+              <div >
+                <p className= "title">{art.title}</p>
+                <p className="desc"> {art.description}</p>
+                <Link className="link" to={`/view/${idx}`}>View Details</Link>
               </div>
             </div>
           );
