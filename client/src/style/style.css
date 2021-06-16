@@ -1,43 +1,4 @@
 
-
-.active-pink-4 input[type="text"]:focus:not([readonly]) {
-    border: 1px solid #1e3685;
-    box-shadow: 0 0 0 1px #1e3685;
-   
-   
-  }
-
-  .active-pink textarea[type="text"]input[type="url"]:focus:not([readonly]) {
-    border: 1px solid #1e3685;
-    box-shadow: 0 0 0 1px #1e3685;
-   
-   
-  }
-  .active-pink-3 textarea[type="text"]input[type="url"] {
-    display: flex;
-    border: 1px solid #1e3685;
-    box-shadow: 0 0 0 1px #1e3685;
-    text-align: left;
-    margin-top: 90px;
-    margin-right: 30px;
-    width: 500px;
-    height: 50px;
-    margin-bottom: 100px;
-  
-  }
-
-  .active-pink textarea[type="text"] {
-    display: flex;
-    border: 1px solid #1e3685;
-    box-shadow: 0 0 0 1px #1e3685;
-    text-align: left;
-    margin-top: 90px;
-    margin-right: 30px;
-    width: 500px;
-    height: 50px;
-    margin-bottom: 100px;
-  
-  }
   .active-pink textarea[type="text"] {
     display: flex;
     border: 1px solid #1e3685;
@@ -49,7 +10,7 @@
     margin-bottom: 100px;
   
   }
-  .active-pink textarea[type="text"] {
+  .active-pink-3 input[type="text"] {
     display: flex;
     border: 1px solid #1e3685;
     box-shadow: 0 0 0 1px #1e3685;
@@ -58,7 +19,7 @@
     margin-right: 30px;
     width: 500px;
     height: 50px;
-    margin-bottom: -10px;
+    margin-bottom: 70px;
   
   }
   .active-pink input[type="url"] {
