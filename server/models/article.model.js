@@ -2,7 +2,8 @@ const mongoose = require('mongoose');
 
 const ArticleSchema = new mongoose.Schema({
     UserName:{
-        type: String
+        type: String,
+        default: 'Cloud9'
     },
     title: {
         type: String
@@ -19,8 +20,10 @@ const ArticleSchema = new mongoose.Schema({
     writtenByUser: {
         type: Boolean,
         default: false
+    },
+    image: {
+        type: String
     }
-    
 
 }, {timestamps: true});
 

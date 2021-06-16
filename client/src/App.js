@@ -2,6 +2,7 @@
 import './App.css';
 import Main from './views/Main';
 import ViewArt from './views/ViewArt'
+import Favorites from './views/Favorites'
 import {Router} from '@reach/router'
 import {useState} from 'react'
 
@@ -15,7 +16,7 @@ function App() {
 
         <ul>
             <li><a href="/">Search</a></li>
-            <li><a href="">Favorites</a></li>
+            <li><a href="/favorites">Favorites</a></li>
         </ul>
         </section>
    </div>
@@ -23,6 +24,7 @@ function App() {
       <Router> 
             <Main path='/' articles={articles}  setArticles={setArticles} />
             <ViewArt path="/view/:id" articles={articles}  />
+            <Favorites path='/favorites'/>
       </Router>
     </div>
   );

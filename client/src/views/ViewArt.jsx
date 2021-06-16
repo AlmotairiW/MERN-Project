@@ -1,16 +1,28 @@
-import React from 'react';
+import { navigate } from '@reach/router';
+import axios from 'axios';
+import React, {useState} from 'react';
 import '../style/style.css';
 
 const ViewArt = props =>{
-    console.log("if");
 
     const {articles} = props;
     const {id} = props;
-    console.log(articles[id]);
 
+    const thisArticle = {
+        title : articles[id].title,
+        description: articles[id].description,
+        content: articles[id].content,
+        url: articles[id].url,
+        image: articles[id].image
+    }
+
+    const addHandler = e => {
+        axios.post('http://localhost:8000/api/articles/new', thisArticle)
+        .then(res => navigate('/favorites'))
+        .catch( err => console.log(err));
+    }
 
     return (
-      
 
     <div class="section_our_solution">
         <div class="row">
@@ -81,7 +93,7 @@ const ViewArt = props =>{
 
         </div > 
         <div class="solu_description">
-        <button style= {{marginTop: "20px"}} type="button" class="read_more_btn">Add to favorite</button>
+        <button style= {{marginTop: "20px"}} type="button" class="read_more_btn" onClick={addHandler}>Add to favorite</button>
         
         </div>
         
