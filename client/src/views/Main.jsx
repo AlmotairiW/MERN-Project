@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { Link } from "@reach/router";
-import '../style/MainStyle.css';
+import '../style/style.css';
 
 
 const Main = (props) => {

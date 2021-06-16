@@ -1,5 +1,5 @@
 import React from 'react';
-import '../style/MainStyle.css';
+import '../style/style.css';
 
 const ViewArt = props =>{
     console.log("if");
