@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { Link } from "@reach/router";
 import '../style/style.css';
 import FavoritesList from "../components/FavoritesList";
+
+import UserArticleList from "../components/UserArticleList";
+
 
 
 
@@ -26,7 +28,7 @@ const Favorites = (props) => {
             <div>
             { lodaed &&
             <div>
-            
+                <UserArticleList articles={articles} removeFromDom={removeFromDom}/>
                 <FavoritesList articles={articles} removeFromDom={removeFromDom}/>
             </div>
             }

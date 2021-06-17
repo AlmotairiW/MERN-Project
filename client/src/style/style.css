@@ -180,7 +180,7 @@
      .curved {
     position: relative;
     background: #1e3685;
-    height: 18vh;
+    height: 20vh;
     border-bottom-left-radius: 50% 100%;
     border-bottom-right-radius: 50% 100%;
   }
@@ -202,7 +202,7 @@
   }
 
   .link{
-    margin-right: 88%;
+    margin-right: 86%;
     text-align: right;
     padding-bottom: 5%;
 

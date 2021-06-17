@@ -9,7 +9,7 @@ import ViewUserArt from './views/ViewUserArt'
 import ViewSource from './views/ViewSource'
 import {Router} from '@reach/router'
 import {useState} from 'react'
-
+import Logo from './style/Logo.png'
 
 function App() {
   const [articles, setArticles] = useState([]);
@@ -23,7 +23,9 @@ function App() {
               <li><a href="/favorites">Favorites</a></li>
               <li ><a href="/user/articles/new">Add Article</a></li>
               <li ><a href = "/user/articles">My Articles</a></li>
+           
           </ul>
+          <img src = {Logo} style={{width:220, marginTop:-70, marginLeft:-65}} ></img>
         </section>
     </div>
    

@@ -1,8 +1,15 @@
+import React from 'react'
+import axios from 'axios';
+import {navigate} from '@reach/router'
+import DeleteUserArt from './DeleteUserArt'
 
 const UserArticleList = ({articles, removeFromDom}) =>{
-
-
-
+        
+    
+  
+        
+    
+    
     return(
         <div className="Card">
          
@@ -69,7 +76,7 @@ const UserArticleList = ({articles, removeFromDom}) =>{
                 <p style = {{marginBottom:"20px"}}>{art.description}</p>
                 
                 <a style={{ marginBottom:"50px"}} href={`/user/articles/${art._id}`} ><button type="button" className="read_more_btn">Details</button></a>
-                {/* <DeleteButton articleId={art._id} removeFromDom={removeFromDom} style= {{marginTop: "20px"}} type="button" class="read_more_btn">UnPuplish</DeleteButton> */}
+                <DeleteUserArt articleId={art._id} removeFromDom={removeFromDom} style= {{marginTop: "20px"}} type="button" class="read_more_btn">Unfavorite</DeleteUserArt>
 
         </div > 
     
