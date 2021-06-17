@@ -3,7 +3,7 @@ import Main from './views/Main';
 import ViewArt from './views/ViewArt'
 import Favorites from './views/Favorites'
 import ViewLocalArt from './views/ViewLocalArt'
-import ArtFrom from './views/ArtForm'
+import NewArticle from './components/NewArticle'
 import {Router} from '@reach/router'
 import {useState} from 'react'
 
@@ -29,7 +29,7 @@ function App() {
             <ViewArt path="/view/:id" articles={articles}  />
             <Favorites path='/favorites'/>
             <ViewLocalArt path = '/articles/:id' articles={articles} setArticles={setArticles}/>   
-            <ArtFrom path = "/articles/new"/>
+            <NewArticle path = "/articles/new"/>
 
       </Router>
     </div>
