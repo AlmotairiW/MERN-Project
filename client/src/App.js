@@ -6,6 +6,7 @@ import ViewLocalArt from './views/ViewLocalArt'
 import NewArticle from './components/NewArticle'
 import UserArticles from './views/UserArticles'
 import ViewUserArt from './views/ViewUserArt'
+import ViewSource from './views/ViewSource'
 import {Router} from '@reach/router'
 import {useState} from 'react'
 
@@ -20,8 +21,8 @@ function App() {
           <ul>
               <li><a href="/">Search</a></li>
               <li><a href="/favorites">Favorites</a></li>
-              <li ><a href="/user/articles/new">Add articles</a></li>
-              <li ><a href = "/user/articles">User Articles</a></li>
+              <li ><a href="/user/articles/new">Add Article</a></li>
+              <li ><a href = "/user/articles">My Articles</a></li>
           </ul>
         </section>
     </div>
@@ -34,6 +35,7 @@ function App() {
             <NewArticle path = "/user/articles/new"/>
             <ViewUserArt path= "/user/articles/:id"/>
             <UserArticles path="/user/articles" />
+            <ViewSource path="/user/articles/source/:id" />
 
       </Router>
     </div>
