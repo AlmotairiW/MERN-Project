@@ -9,7 +9,7 @@ const DeleteButton = props =>{
     const deleteArticle = e  =>
     {
         axios.delete('http://localhost:8000/api/articles/delete/' + articleId)
-        .then(res => navigate('/user/articels'))
+        .then(res => navigate('/user/articles'))
         .catch(err => console.log(err));
 
     }

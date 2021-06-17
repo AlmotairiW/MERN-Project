@@ -56,7 +56,7 @@ const NewArticle = () =>{
                 <div style={{textAlign:"left",color:"#1e3685"}}>
                     <label ><b>Resource :</b></label>
                 </div>
-                <select   name="resource" id="resource" onChange={e => set_id(e.target.value)}>
+                <select  onChange={e => set_id(e.target.value)}>
                 {/* <option value={art.title}>{art.title}</option> */}
 
                 {   lodaed&&
