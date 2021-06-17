@@ -24,7 +24,7 @@ return (
                     <h3 style = {{marginBottom:"20px"}}>{articles.title}</h3>
                     <p style = {{marginBottom:"23px"}}>{articles.description}</p>
                         <p style = {{marginBottom:"23px"}}>{articles.content}</p>
-                        <p>published at: {articles.publishedAt}</p>
+                        <p>published at: {articles.createdAt}</p>
                         <a  href={articles.url} target="_blank"><button className="btn-hover1 color-1" >Read From the Orignal Source</button></a>
 
                 

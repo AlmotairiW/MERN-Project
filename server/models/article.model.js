@@ -23,6 +23,10 @@ const ArticleSchema = new mongoose.Schema({
     },
     image: {
         type: String
+    },
+    
+    articleId: {
+        type: String,
     }
 
 }, {timestamps: true});
