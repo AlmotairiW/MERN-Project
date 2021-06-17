@@ -135,14 +135,14 @@
     transition: all .4s ease-in-out;
 }
   ul {
-      display: flex;
+    display: flex;
     list-style-type: none;
-    width: 500px;
+    width: 600px;
     overflow: hidden;
   }
   
   li {
-    margin-right: -70px;
+    margin-right: -105px;
     margin-left: 20%;
     float: left;
   }

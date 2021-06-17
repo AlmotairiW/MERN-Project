@@ -66,9 +66,9 @@ const UserArticleList = ({articles, removeFromDom}) =>{
                 <h3>{art.title}</h3>
                 </div>
                 <div className="solu_description">
-                <p>{art.description}</p>
+                <p style = {{marginBottom:"20px"}}>{art.description}</p>
                 
-                <a style={{marginRight:"20px", marginBottom:"50px"}} href={`/user/articles/${art._id}`} ><button type="button" className="read_more_btn">Details</button></a>
+                <a style={{ marginBottom:"50px"}} href={`/user/articles/${art._id}`} ><button type="button" className="read_more_btn">Details</button></a>
                 {/* <DeleteButton articleId={art._id} removeFromDom={removeFromDom} style= {{marginTop: "20px"}} type="button" class="read_more_btn">UnPuplish</DeleteButton> */}
 
         </div > 

@@ -47,13 +47,13 @@ const NewArticle = () =>{
         <div>
         <form onSubmit={createHandler} >
             <div className="active-pink active-pink mb "  style={{ marginBottom:20,marginTop:20}}>
-                <h2 style={{textAlign:"left", marginTop:20}}>Add a new Article</h2>
+                <h2 style={{textAlign:"left", marginTop:20, marginTop:50}}>Add a new Article</h2>
                 <input style={{ marginBottom:20,marginTop:40}} className="form-control" type="text" name="title" placeholder="Title" onChange={e => setTitle(e.target.value)}/>
-                <textarea style={{ marginBottom:20,marginTop:20}} className="form-control" type="text"  name="content" placeholder="Content"  onChange={e => setContent(e.target.value)}/>
-                <textarea style={{ marginBottom:20,marginTop:20}} className="form-control" type="text" rows="4"  name="description" placeholder="Description"  onChange={e => setDescription(e.target.value)}/>
+                <textarea style={{ marginBottom:20,marginTop:20,height:"150px"}} className="form-control" type="text"  name="content" placeholder="Content"  onChange={e => setContent(e.target.value)}/>
+                <textarea style={{ marginBottom:20,marginTop:20, height:"150px"}} className="form-control" type="text" rows="4"  name="description" placeholder="Description"  onChange={e => setDescription(e.target.value)}/>
                 {/* <input style={{ marginBottom:20,marginTop:20}} className="form-control" type="url"  name="url" placeholder="URL"  onChange={e => setTitle(e.target.value)}/> */}
                 
-                <div style={{textAlign:"left",color:"#64749b"}}>
+                <div style={{textAlign:"left",color:"#1e3685"}}>
                     <label ><b>Resource :</b></label>
                 </div>
                 <select   name="resource" id="resource" onChange={e => set_id(e.target.value)}>
@@ -70,7 +70,7 @@ const NewArticle = () =>{
                     })
                 }
                 </select>
-                <button style={{ marginBottom:20,marginTop:30}} className="btn-hover color-9" >Add</button>
+                <button style={{ marginBottom:20,marginTop:1, width:400}} className="btn-hover color-9" >Add</button>
             </div>
         </form>
         </div>      
